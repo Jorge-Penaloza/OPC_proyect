@@ -18,8 +18,8 @@ client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 # Configuración de la conexión
 server_name = "opc-pruebas0001-server.database.windows.net"
 database_name = "opc-pruebas0001"
-username = "admin2136"
-password = "Arkaiko2136."
+username = ""
+password = ""
 
 # Cadena de conexión
 connection_string = (
