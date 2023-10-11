@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Consumo</title>
+</head>
+<body>
+
+<div id="output"></div>
+
+<script>
+    // Usamos el proxy para evitar problemas de CORS
+    fetch('https://cors-anywhere.herokuapp.com/https://opc-wep.azurewebsites.net/')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(data => {
+        console.log(data);
+        let output = document.getElementById('output');
+        data.data.forEach(item => {
+            output.innerHTML += `<p>ID: ${item.id}, URL: ${item.urlServerOPC.replace(/\\/g, '')}, Nombre: ${item.nombreOPC}</p>`;
+        });
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+</script>
+
+</body>
+</html>
+
+

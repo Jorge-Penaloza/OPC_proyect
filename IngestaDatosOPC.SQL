@@ -1,0 +1,10 @@
+INSERT INTO ServidorOPC (id,url) VALUES (1, 'opc.tcp://192.168.0.20:49320');
+INSERT INTO ServidorOPC (id,url) VALUES (2, 'opc.tcp://192.168.0.8:4840');
+INSERT INTO TagOPC (id, name, address, idServidor) VALUES (1, 'Motor', 'ns=2;s=Excel V1.Excel Directo.Motor', 1);
+INSERT INTO TagOPC (id, name, address, idServidor) VALUES (2, 'Temperatura', 'ns=2;s=Excel V1.Excel Directo.Temp', 1);
+INSERT INTO TagOPC (id, name, address, idServidor) VALUES (3, 'Humedad', 'ns=2;s=Excel V1.Excel Directo.hum', 1);
+INSERT INTO TagOPC (id, name, address, idServidor) VALUES (4, 'VAR1', 'ns=4;i=3', 2);
+INSERT INTO TagOPC (id, name, address, idServidor) VALUES (5, 'VAR2', 'ns=4;i=4', 2);
+INSERT INTO TagOPC (id, name, address, idServidor) VALUES (6, 'MOTOR', 'ns=4;i=5', 2);
+INSERT INTO TagOPC (id, name, address, idServidor) VALUES (7, 'START', 'ns=4;i=6', 2);
+INSERT INTO TagOPC (id, name, address, idServidor) VALUES (8, 'STOP', 'ns=4;i=7', 2);

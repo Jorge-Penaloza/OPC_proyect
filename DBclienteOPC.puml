@@ -1,0 +1,16 @@
+@startuml ss
+class ServidorOPC {
+    + id : Integer
+    + url : String
+    + habilitacion : Integer
+}
+
+class TagOPC {
+    + id : Integer
+    + name : String
+    + address : String
+    + idServidor : Integer
+}
+
+ServidorOPC "1" -- "0..*" TagOPC : contiene
+@enduml
