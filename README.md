@@ -26,6 +26,10 @@ Cliente Socket insertDB.py: Programa encargado de inyectar los datos en la base 
 
 index.php y leeazure.html: Archivos relacionados con la interfaz web para la visualización de datos.
 
+
+## Contribuciones
+Si estás interesado en contribuir o tienes alguna pregunta sobre el proyecto, no dudes en contactar al autor principal, Jorge Peñaloza, a través de su correo electrónico: jorge.penaloza.guerra@gmail.com.
+
 ### Desarrolladores
 Este proyecto fue desarrollado por Jorge Peñaloza en colaboración con Ana Javiera Valdés.
 
